@@ -234,11 +234,12 @@ The FPS counter is shown in the information panel together with the active backe
 
 ![Equatorial view showing gravitational lensing of the accretion disk](equatorial-view.png)
 
-![Simulation interface with live astrophysics HUD showing a low-mass (0.10 Msun) black hole](images/simulation-low-mass-hud.png)
+![Simulation interface with live astrophysics HUD showing a low-emass (0.10 Msun) black hole](simulation-low-mass-hud.png)
 
 ![High inclination view showing the accretion disk structure and central shadow](high-inclination-view.jpg)
 
-![Simulation interface with live astrophysics HUD showing a supermassive (1 billion Msun) black hole](images/simulation-supermassive-hud.png)
+
+![Simulation interface with live astrophysics HUD showing a supermassive (1 billion Msun) black hole](simulation-supermassive-hud.png)
 
 ## Tests
 
