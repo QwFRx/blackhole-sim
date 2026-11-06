@@ -1,4 +1,4 @@
-![Black Hole Simulation Banner](/images/black-hole-simulation-banner.png)
+![Black Hole Simulation Banner](black-hole-simulation-banner.png)
 
 # Black Hole Simulation
 
@@ -283,9 +283,9 @@ Released under the MIT License. See [LICENSE](LICENSE).
 
 ## Автор
 
-**[Your Name]** — university astrophysics / scientific computing project.
+**Im** — university astrophysics / scientific computing project.
 
-- GitHub: [@your-handle](https://github.com/your-handle)
-- Email: `your.email@example.com`
+- GitHub: [@QwFRx](https://github.com/QwFRx)
+- Email: `soon`
 
 Replace the placeholder with your name, handle and contact before publishing.
