@@ -9,7 +9,7 @@ A university project: a real-time 3D Schwarzschild black-hole visualiser with re
 ![Numba](https://img.shields.io/badge/Numba-JIT-orange)
 ![Pygame](https://img.shields.io/badge/Pygame-window-2f7d32)
 
-## О проекте
+## About the Project
 
 The renderer launches one ray per pixel from an orbiting camera and integrates the null geodesic backwards in time. Rays that fall through the Schwarzschild horizon are black; rays that cross the equatorial plane sample a thin accretion disk; escaping rays are looked up in a seeded procedural starfield. Because the integration is performed in the curved spacetime rather than in flat space, the shadow, the Einstein ring, the secondary disk image and the characteristic "halo" above and below the black hole emerge automatically.
 
@@ -17,7 +17,7 @@ The physics core uses geometrised units, `G = c = M = 1`, so the Schwarzschild r
 
 The Kerr spin parameter is included as an analytic diagnostic: `r+`, the equatorial ergosphere and the prograde/retrograde ISCO are computed exactly and shown in the panel. The ray tracer itself stays Schwarzschild because the required Cartesian null-geodesic form is spherically symmetric; full Kerr geodesics are listed in the roadmap.
 
-## Возможности
+## Features
 
 - Real-time preview at `320x180` (configurable), upscaled with smooth filtering.
 - Numba JIT backend over pixels, with an automatic pure-NumPy fallback.
@@ -37,7 +37,7 @@ The Kerr spin parameter is included as an analytic diagnostic: `r+`, the equator
 - Deterministic seeded starfield and procedural disk texture.
 - No audio code and no sound libraries.
 
-## Физика
+## Physics
 
 The internal unit system is `G = c = M = 1`; the Schwarzschild radius is `rs = 2`. Distances shown in the UI are converted to SI with the selected mass.
 
@@ -137,7 +137,7 @@ $$
 \Delta\varphi_{\rm weak} = \frac{6\pi GM}{c^2 a(1-e^2)}.
 $$
 
-## Установка
+## Installation
 
 Python 3.10 or newer is required.
 
@@ -151,7 +151,7 @@ pip install -r requirements.txt
 
 Numba is optional at runtime: if it is missing or fails to compile, the renderer automatically uses the vectorised NumPy backend. The NumPy fallback is slower, especially for full-HD stills.
 
-## Запуск
+## Usage
 
 Interactive preview with the default `320x180` render surface (upscaled to a `960x540` window):
 
@@ -190,7 +190,7 @@ Run the test suite:
 pytest -q
 ```
 
-## Управление
+## Controls
 
 | Input | Action |
 | --- | --- |
@@ -206,7 +206,7 @@ pytest -q
 
 The FPS counter is shown in the information panel together with the active backend (`numba` or `numpy`) and the pause state. The camera distance is constrained to `8 ... 250 rs`; inclination to `1 ... 89` degrees above the disk plane.
 
-## Структура проекта
+## Project Structure
 
 ```text
 .
@@ -230,13 +230,13 @@ The FPS counter is shown in the information panel together with the active backe
     └── .gitkeep
 ```
 
-## Скриншоты
+## Screenshots
 
-[IMAGE PROMPT: 16:9 in-app screenshot 1920x1080, dark sci-fi desktop window showing a photorealistic Schwarzschild black hole at 18 degrees above a thin glowing orange accretion disk, bright photon ring wrapping the black shadow, secondary lensed disk arc above the hole, dense deterministic starfield, left-side translucent monospace physics panel with mass, spin, rs, Hawking temperature, evaporation time, entropy, tidal acceleration and Kerr ISCO values, small FPS counter, no visible desktop clutter, crisp high-contrast UI]
+![Equatorial view showing gravitational lensing of the accretion disk](equatorial-view.png)
 
-[IMAGE PROMPT: 16:9 in-app screenshot 1920x1080, face-on view at 60 degrees inclination, luminous orange-white accretion disk surrounding a pitch-black circular shadow, thin Einstein ring of lensed stars around the shadow, procedural spiral turbulence in the disk, deep-space nebula band, right-hand side clean overlay with control help panel listing mouse drag, wheel zoom, arrow keys, mass, spin, pause, PNG save and quit, cinematic colour grading, university astrophysics project aesthetic]
+![High inclination view showing the accretion disk structure and central shadow](high-inclination-view.jpg)
 
-## Тесты
+## Tests
 
 `tests/test_physics.py` contains 12 checks:
 
@@ -258,7 +258,7 @@ pytest -q
 # 12 passed
 ```
 
-## Планы развития
+## Roadmap
 
 - Full Kerr geodesics with Boyer-Lindquist coordinates and frame dragging in the image.
 - GPU backend (CUDA or WebGPU) for interactive full-HD rendering.
@@ -269,7 +269,7 @@ pytest -q
 - Time-dependent magnetohydrodynamic disk texture.
 - Small web front-end sharing the same physics module.
 
-## Источники
+## References
 
 1. K. Schwarzschild, *Über das Gravitationsfeld eines Massenpunktes nach der Einsteinschen Theorie*, Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften (1916).
 2. C. W. Misner, K. S. Thorne, J. A. Wheeler, *Gravitation*, W. H. Freeman (1973).
@@ -277,13 +277,13 @@ pytest -q
 4. O. James, E. von Tunzelmann, P. Franklin, K. Thorne, *Gravitational lensing by spinning black holes in astrophysics, and in the movie Interstellar*, Classical and Quantum Gravity 32, 065001 (2015); DNGR (Double Negative Gravitational Renderer) technical report.
 5. J. M. Bardeen, W. H. Press, S. A. Teukolsky, *Rotating black holes: locally nonrotating frames, energy extraction, and scalar synchrotron radiation*, Astrophysical Journal 178, 347 (1972) — Kerr ISCO formula.
 
-## Лицензия
+## License
 
 Released under the MIT License. See [LICENSE](LICENSE).
 
-## Автор
+## Author
 
-**Im** — university astrophysics / scientific computing project.
+**Artem Q.** — university astrophysics / scientific computing project.
 
 - GitHub: [@QwFRx](https://github.com/QwFRx)
 - Email: `soon`
