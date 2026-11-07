@@ -142,7 +142,7 @@ $$
 Python 3.10 or newer is required.
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/QwFRx/blackhole-sim.git
 cd blackhole-sim
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -233,11 +233,6 @@ The FPS counter is shown in the information panel together with the active backe
 ## Screenshots
 
 ![Equatorial view showing gravitational lensing of the accretion disk](equatorial-view.png)
-
-![Simulation interface with live astrophysics HUD showing a low-mass (0.10 Msun) black hole](simulation-low-mass-hud.png)
-
-![High inclination view showing the accretion disk structure and central shadow](high-inclination-view.jpg)
-
 
 ![Simulation interface with live astrophysics HUD showing a supermassive (1 billion Msun) black hole](simulation-supermassive-hud.png)
 
