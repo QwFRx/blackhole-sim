@@ -283,7 +283,7 @@ Released under the MIT License. See [LICENSE](LICENSE).
 
 ## Author
 
-**Artem Q.** — university astrophysics / scientific computing project.
+**Deep Seekovich Flash** — university astrophysics / scientific computing project.
 
 - GitHub: [@QwFRx](https://github.com/QwFRx)
 - Email: `soon`
